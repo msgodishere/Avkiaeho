@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muddasir Premium Store</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #111111;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #00bcd4;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00acc1;
+    }
+
+    /* ---------- About Section ---------- */
+    section {
+      padding: 80px 60px;
+    }
+
+    .about h2, .services h2, .products h2 {
+      text-align: center;
+      color: #00e5ff;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* ---------- Products Section ---------- */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    .product p {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background: #00bcd4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .product button:hover {
+      background: #00acc1;
+    }
+
+    /* ---------- Services Section ---------- */
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #111;
+      color: #888;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muddasir Premium Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Muddasir Premium Store</h2>
+    <p>Your one-stop shop for top-quality tech and modern accessories. Discover the latest trends and premium designs built to last.</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Muddasir Premium Store, we pride ourselves on offering premium-quality gadgets and accessories at competitive prices. Our mission is to deliver exceptional products that combine style, innovation, and durability for our valued customers.</p>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/250x200.png?text=Smart+Watch" alt="Smart Watch" />
+        <h3>Smart Watch</h3>
+        <p>Premium fitness tracker with health monitoring.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/250x200.png?text=Wireless+Headphones" alt="Headphones" />
+        <h3>Wireless Headphones</h3>
+        <p>High-quality sound with noise cancellation.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/250x200.png?text=Smartphone+Stand" alt="Smartphone Stand" />
+        <h3>Smartphone Stand</h3>
+        <p>Adjustable aluminum stand for your devices.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service">
+        <h3>Fast Delivery</h3>
+        <p>We ensure fast and reliable delivery to your doorstep anywhere in Pakistan.</p>
+      </div>
+      <div class="service">
+        <h3>24/7 Support</h3>
+        <p>Our support team is available around the clock to assist you with any queries.</p>
+      </div>
+      <div class="service">
+        <h3>Secure Payments</h3>
+        <p>We offer safe and secure online transactions for a worry-free shopping experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muddasir Premium Store | All Rights Reserved | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    // Optional JS (for smooth scrolling)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
